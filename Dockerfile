@@ -19,8 +19,4 @@ COPY "entrypoint.bat" "c:\dev\tools"
 
 
 # Start developer command prompt with any other commands specified.
-#ENTRYPOINT "c:\dev\tools\entrypoint.bat" &&
-
-CMD "c:\dev\tools\entrypoint.bat"
-# Default to PowerShell if no other command specified.
-#CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+ENTRYPOINT c:\dev\tools\entrypoint.bat
